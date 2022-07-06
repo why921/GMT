@@ -9,6 +9,7 @@ gmt gmtset FRAME_WIDTH 0.1
 gmtset PLOT_DEGREE_FORMAT = ddd:mmF
 
 gmt begin inset-example png,pdf
+gmt grdimage @earth_relief_01m -R-180/180/60/90 -Js0/90/1:30000000 -BSN -Ba30f10g10
     gmt coast -R-180/180/70/90 -JA0/90/4.5i -Ggrey -Swhite -Wthinnest
      echo 64 77 63 78 | gmt plot -A -Sr+s -W1p,blue
      echo 64 78 63 79 | gmt plot -A -Sr+s -W1p,blue
@@ -24,3 +25,4 @@ gmt begin inset-example png,pdf
      echo -123 78 -124 79 | gmt plot -A -Sr+s -W1p,GREEN
      echo -123 79 -124 80 | gmt plot -A -Sr+s -W1p,GREEN
 gmt end show
+

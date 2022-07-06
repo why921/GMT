@@ -8,6 +8,25 @@ gmt gmtset TICK_LENGTH 0.1
 gmt gmtset FRAME_WIDTH 0.1
 gmtset PLOT_DEGREE_FORMAT = ddd:mmF
 
+
 gmt begin arctic png
-    gmt grdimage @earth_relief_01m -R-180/180/60/90 -Js0/90/1:30000000 -BSN -Ba30f10g10
+
+
+     gmt coast -R-180/180/60/90 -Ba -JA0/90/4.5i -Gsnow4 -Slightsteelblue -Wthinnest
+
+     echo  -133.42086235  70.44429915 | gmt plot -St0.4  -Gred  -W
+     echo  -132.85430130  71.42835535 | gmt plot -St0.4  -Gred  -W
+     echo  -111.41602310  76.46593329 | gmt plot -St0.4  -Gred  -W
+     echo  -112.37947530  76.91546765 | gmt plot -St0.4  -Gred  -W
+
+
+
+
+
+
+
+
+
+
+
 gmt end show
