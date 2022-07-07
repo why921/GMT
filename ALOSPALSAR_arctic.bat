@@ -11,18 +11,11 @@ gmtset PLOT_DEGREE_FORMAT = ddd:mmF
 
 gmt begin arctic png
 
+     gmt coast -R-180/180/60/90 -Bafg -JA0/90/4.5i -Gsnow4 -Slightsteelblue -Wthinnest
 
-     gmt coast -R-180/180/60/90 -Ba -JA0/90/4.5i -Gsnow4 -Slightsteelblue -Wthinnest
+     gmt plot center.txt -St0.4 -Gred -W
 
-     echo  -133.42086235  70.44429915 | gmt plot -St0.4  -Gred  -W
-     echo  -132.85430130  71.42835535 | gmt plot -St0.4  -Gred  -W
-     echo  -111.41602310  76.46593329 | gmt plot -St0.4  -Gred  -W
-     echo  -112.37947530  76.91546765 | gmt plot -St0.4  -Gred  -W
-
-
-
-
-
+     echo 180 90 0 46.866666d 46.866666d  | gmt plot  -SE -Wthin,-
 
 
 
