@@ -15,6 +15,8 @@ gmt begin arctic png
 
      gmt plot center.txt -St0.4 -Gred -W
 
+     gmt plot validation.txt -St0.4 -Gspringgreen2 -W
+
      echo 180 90 0 46.866666d 46.866666d  | gmt plot  -SE -Wthin,-
 
 
